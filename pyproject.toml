@@ -1,0 +1,30 @@
+[project]
+name = "template-fastapi-py312"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "lyg6772@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.115.8,<0.116.0)",
+    "uvicorn (>=0.34.0,<0.35.0)",
+    "mysql-connector-python (>=9.2.0,<10.0.0)",
+    "aiomysql (>=0.2.0,<0.3.0)",
+    "asyncio (>=3.4.3,<4.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+httpx = "^0.28.1"
+pytest-asyncio = "^0.25.3"
+flake8 = "^7.1.2"
+black = "^25.1.0"
+pre-commit = "^4.1.0"
